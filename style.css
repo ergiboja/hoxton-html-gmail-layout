@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: solid 1px black;
+
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template: 
+    "leftheader search rightheader rightmainnav "50px 
+    "leftmain middlemain rightmain rightmainnav "1fr/
+    300px    1fr 300px 100px
+    
+    ;
+
+
+
+}
+
+.leftheader{
+ background-color: rgb(166, 47, 182);
+  grid-area: leftheader;
+}
+.search{
+    background-color: rgb(117, 36, 188);
+    grid-area: search;
+
+}
+.rightheader{
+    background-color: rgb(205, 244, 255);
+    grid-area: rightheader;
+
+}
+.leftmain{
+    background-color: rgb(205, 208, 255);
+    grid-area: leftmain;
+
+     }
+.middlemain{
+
+    background-color: rgb(255, 205, 238);
+    grid-area: middlemain;
+
+
+    }
+.rightmain{
+    background-color: rgb(255, 205, 205);
+    grid-area: rightmain;
+
+
+     }
+.rightmainnav{
+
+    background-color: blanchedalmond;
+    grid-area: rightmainnav;
+
+
+    }
